@@ -10,6 +10,7 @@ admin.autodiscover()
 
 urlpatterns += (
     url(r'^admin/', include(admin.site.urls)),
+	url(r'^polls/', include('apps.polls.urls')),
 )
 
 urlpatterns += staticfiles_urlpatterns()
